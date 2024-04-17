@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mirror:
+    image: nginx:latest
+    volumes:
+      - ./mirror/www.marxists.org/chinese:/usr/share/nginx/html:ro
+    ports:
+      - "8255:80"
+
